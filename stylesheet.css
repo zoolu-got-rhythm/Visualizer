@@ -1,0 +1,27 @@
+.container {
+
+  width: 600px;
+  height: 500px;
+  background: #eee;
+  margin:0 auto; 
+}
+
+.column {
+  float:left;
+  width: 100px;
+  height: 500px;
+  background: #ccc;
+  margin:10px;
+}
+
+.dot {
+  /*display: block;*/
+  height: 25px;
+ /* background: rgba(0,0,0,0.1);*/
+  background: #333;
+  float:left; /*excuse me if i mess up your css on .dot :p no worries*/
+  width:90px;
+  height:10px;
+  border-radius:3px;
+  margin:5px;
+}
