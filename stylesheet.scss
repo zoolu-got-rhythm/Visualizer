@@ -1,0 +1,113 @@
+
+
+$paragraph: #333;
+$wallpaper: #eee;
+
+
+*{
+  text-align:center;
+  font-family:"Roboto"
+}
+
+body{
+  background: $wallpaper
+}
+
+p{
+  color:$paragraph;
+  margin:2px;
+}
+
+
+#container {
+
+  width: 600px;
+  height: 500px;
+  margin:0 auto;
+}
+
+.column {
+  float:left;
+  width: 100px;
+  height: 480px;
+  /*background: #ccc;*/
+  margin:10px;
+}
+
+
+@mixin bars($colour){
+  height: 25px;
+  float:left; /*excuse me if i mess up your css on .dot :p no worries*/
+  width:90px;
+  height:10px;
+  border-radius:3px;
+  margin:5px;
+  background:$colour;
+}
+
+/*If i can somehow loop through these children for maximum efficiency/can be done in js */
+
+.dot:nth-child(1){
+  @include bars(#aaa);
+}
+
+.dot:nth-child(2){
+  @include bars(#999);
+}
+
+.dot:nth-child(3){
+  @include bars(#888);
+}
+
+.dot:nth-child(4){
+  @include bars(#777);
+}
+
+.dot:nth-child(5){
+  @include bars(#666);
+}
+
+.dot:nth-child(6){
+  @include bars(#555);
+}
+
+.dot:nth-child(7){
+  @include bars(#444);
+}
+
+.dot:nth-child(8){
+  @include bars(#333);
+}
+
+.dot:nth-child(9){
+  @include bars(#222);
+}
+
+.dot:nth-child(10){
+  @include bars(#111);
+}
+
+
+
+
+
+/*
+mixin
+
+@mixin border-radius(argument){
+
+border-radius: argument;
+-moz-border-radius: argument;
+-webkit-border-radius: argument;
+
+
+
+
+}
+
+.nav ul li a{
+@include border-radius($value);
+
+}
+
+*/

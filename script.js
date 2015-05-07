@@ -32,7 +32,7 @@ for (var i = 0; i <= 50; i++) {
         if (i === 10) {
             mother = document.createElement("div");
             mother.classList.add("column");
-            dad.appendChild(mother);            
+            dad.appendChild(mother);
         }
         mother.appendChild(kids);
     }
@@ -40,7 +40,7 @@ for (var i = 0; i <= 50; i++) {
         if (i === 20) {
             mother = document.createElement("div");
             mother.classList.add("column");
-            dad.appendChild(mother);            
+            dad.appendChild(mother);
         }
         mother.appendChild(kids);
     }
@@ -48,7 +48,7 @@ for (var i = 0; i <= 50; i++) {
         if (i === 30) {
             mother = document.createElement("div");
             mother.classList.add("column");
-            dad.appendChild(mother);            
+            dad.appendChild(mother);
         }
         mother.appendChild(kids);
     }
@@ -56,7 +56,7 @@ for (var i = 0; i <= 50; i++) {
         if (i === 40) {
             mother = document.createElement("div");
             mother.classList.add("column");
-            dad.appendChild(mother);            
+            dad.appendChild(mother);
         }
         mother.appendChild(kids);
     }
