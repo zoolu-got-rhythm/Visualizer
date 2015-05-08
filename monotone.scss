@@ -1,14 +1,14 @@
 
 
 $paragraph: #333;
-$wallpaper: #111;
+$wallpaper: #eee;
 
 //defineded global vars here, which i can re-define later.
 $mid-tone: null;
 $brightest-tone: null;
 $darkest-tone: null;
 
-$color-scheme:#1e1; //pick a primary colour and insert the hexidecimal value. #1e1 #1ee
+$color-scheme:#333; //pick a primary colour and insert the hexidecimal value. #1e1 #1ee
 
 *{
   text-align:center;
@@ -56,7 +56,7 @@ efficiency/can be done in js aswell */
 @for $i from 1 through 10 {
   /*increments through all nth-childs and applies mixin*/
   .dot:nth-child(#{$i}){ // when using sass var's in selectors use #{$varName}
-    @include bars($color-scheme * $i); //the whole color scheme will change based on this argument color.
+    @include bars(#555); //the whole color scheme will change based on this argument color.
   }
 
   /*capture and store nth-child(first), nth-child(last)
@@ -75,11 +75,11 @@ efficiency/can be done in js aswell */
 //p is below the for loop, because like css sass seems to cascade downwards.
 
 p{
-  color: $brightest-tone;
+  color: $darkest-tone;
   margin:2px;
 }
 
 h2{
-  color: $brightest-tone;
-  background: #111;
+  color: $darkest-tone;
+
 }
